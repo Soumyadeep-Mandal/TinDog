@@ -1,15 +1,19 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  
 }
+
+
 
 /* Title section */
 .container-fluid {
-  padding: 3% 15%;
+  padding:3% 15% 10%;
 }
 
 #title {
   background-color: #ff4c68;
+
 }
 
 h1 {
@@ -37,9 +41,12 @@ h1 {
 }
 
 .title-img {
-  width: 60%;
+  width: 23%;
   transform: rotate(25deg);
+  position: absolute;
+  left: 60%;
 }
+
 
 .nav-item {
   padding: 0 16px;
@@ -56,9 +63,14 @@ h1 {
 }
 
 /* Features */
-.features {
-  padding: 7% 15%;
+#features{
+  background-color: #fff;
+   position: relative;
+   z-index: 1;
+   text-align: center;
+   padding: 7% 15%;
 }
+
 
 .features-el {
   padding: 16px;
@@ -85,19 +97,98 @@ h1 {
 }
 
 /* Testimonials  */
-#testimonials{
-  padding: 7% 17%;
+
+#testimonials {
   text-align: center;
   background-color: #ef8172;
   color: #fff;
+  
 }
-h2{
-  font-family:"Montserrat", sans-serif; 
+h2 {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   line-height: 1.5;
 }
-.testimonial-img{
+.testimonial-img {
   width: 10%;
   border-radius: 50%;
+  margin: 20px;
+}
+.carousel-item {
+  padding: 7% 17%;
+}
+
+/* Press */
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 4%;
+ 
+}
+.press-img {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/*   pricing   */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+  
+}
+.pricing-colums {
+  padding: 3% 2%;
+  
+}
+
+
+    /* -----CTA----- */
+
+#cta{
+  background-color: #ff4c68;
+  padding: 7% 15%;
+  text-align: center;
+  
+}
+.h3-cta{
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #fff; 
+}
+
+  
+
+   /* -----Footer----- */
+#footer{
+  padding: 5%;
+  background-color: #fff; 
+  text-align: center;
+  color: #8f8f8f;
+  font-size: small;
+}
+.fotter-logo{
+  padding: 30px 10px;
+  color: #000;
+  font-size: medium;
+}
+
+@media (max-width: 1028px) {
+  #title{
+    text-align: center;
+  }
+  .title-img{
+    position: static;
+    transform: rotate(0deg);
+    padding: 50px 0 0 0;
+    width: 60%;
+  }
+  .h3-cta{
+   font-size: 3.5rem;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 600;
+
+  }
 }
